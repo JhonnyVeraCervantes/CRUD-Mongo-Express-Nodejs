@@ -1,0 +1,126 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+  <h3>Add A Task</h3>
+  <form action="/tasks/add" method="post">
+
+    {{! Title Input }}
+    <div class="mb-3">
+      <label for="title">Write a title:</label>
+      <input
+        id="title"
+        class="form-control rounded-0 bg-dark text-white"
+        type="text"
+        name="title"
+        placeholder="Title"
+        autofocus
+      />
+    </div>
+    {{! Ruc Input }}
+    <div class="mb-3">
+      <label for="ruc">Write a Ruc:</label>
+      <input
+        id="ruc"
+        class="form-control rounded-0 bg-dark text-white"
+        type="text"
+        name="ruc"
+        placeholder="Ruc"
+        autofocus
+      />
+    </div>
+   {{! Razon Social Input }}
+    <div class="mb-3">
+      <label for="razon_social">Razon Social</label>
+      <textarea
+        class="form-control rounded-0 bg-dark text-white"
+        name="razon_social"
+        cols="80"
+        placeholder="Razon_Social"
+      ></textarea>
+    </div>
+    {{! Actividad Comercial Input }}
+    <div class="mb-3">
+      <label for="act_com">Escriba su actividad comercial:</label>
+      <input
+        id="act_com"
+        class="form-control rounded-0 bg-dark text-white"
+        type="text"
+        name="act_com"
+        placeholder="Actividad_Comercial"
+        autofocus
+      />
+    </div>
+      {{! Numero de colaboradores Input }}
+    <div class="mb-3">
+      <label for="num_col">Escriba el numero de colaboradores:</label>
+      <input
+        id="num_col"
+        class="form-control rounded-0 bg-dark text-white"
+        type="text"
+        name="num_col"
+        placeholder="Numero_Colaboradores"
+        autofocus
+      />
+    </div>
+
+<div class="mb-3">
+      <label for="direct_social">Direccion del local:</label>
+      <input
+        id="direct_social"
+        class="form-control rounded-0 bg-dark text-white"
+        type="text"
+        name="direct_social"
+        placeholder="Direct_Social"
+        autofocus
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="parroquia">Parroquia:</label>
+      <input
+        id="parroquia"
+        class="form-control rounded-0 bg-dark text-white"
+        type="text"
+        name="parroquia"
+        placeholder="Parroquia"
+        autofocus
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="telefono">Ingrese su numero de Telefono:</label>
+      <input
+        id="telefono"
+        class="form-control rounded-0 bg-dark text-white"
+        type="int"
+        name="telefono"
+        placeholder="Telefono"
+        autofocus
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="form_client">Formacion del Cliente:</label>
+      <input
+        id="form_client"
+        class="form-control rounded-0 bg-dark text-white"
+        type="text"
+        name="form_client"
+        placeholder="Form_Cliente"
+        autofocus
+      />
+    </div>
+
+    {{! Description Input }}
+    <div class="mb-3">
+      <label for="description">Description</label>
+      <textarea
+        class="form-control rounded-0 bg-dark text-white"
+        name="description"
+        cols="80"
+        placeholder="Add a Description"
+      ></textarea>
+    </div>
+
+
+    <button class="btn btn-primary" type="submit">Add</button>
+  </form>
+</div>

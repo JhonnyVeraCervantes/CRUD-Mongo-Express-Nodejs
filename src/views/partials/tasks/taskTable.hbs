@@ -1,0 +1,62 @@
+{{#if tasks}}
+  <table class="table table-bordered table-hover table-dark">
+    <thead>
+      <tr>
+        <th>N°</th>
+        <th>Title</th>
+        <th>Ruc</th>
+        <th>Razon Social</th>
+        <th>Actividad Comercial</th>
+        <th>Description</th>
+        <th>Direccion del Local</th>
+        <th>Parroquia</th>
+        <th>Telefono</th>
+        <th>Formación Educativa</th>
+        <th>Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each tasks}}
+        <tr>
+          <td>{{@index}}</td>
+          <td><strong>{{title}}</strong></td>
+          <td><strong>{{ruc}}</strong></td>
+          <td><strong>{{razon_social}}</strong></td>
+          <td><strong>{{num_col}}</strong></td>
+          <td><strong>{{act_com}}</strong></td>
+          <td>{{description}}</td>
+          <td><strong>{{direct_social}}</strong></td>
+          <td><strong>{{parroquia}}</strong></td>
+          <td><strong>{{telefono}}</strong></td>
+          <td><strong>{{form_client}}</strong></td>
+          <td>
+            {{#if done}}
+              <a
+                class="btn btn-success"
+                href="/tasks/{{_id}}/toggleDone"
+              >Done</a>
+            {{else}}
+              <a class="btn btn-dark" href="/tasks/{{_id}}/toggleDone">
+                Undone
+              </a>
+            {{/if}}
+            <a href="/tasks/{{_id}}/delete" class="btn btn-danger">
+              Delete
+            </a>
+            <a href="/tasks/{{_id}}/edit" class="btn btn-info">
+              Edit
+            </a>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <div class="h-100 d-flex align-items-center justify-content-center">
+    <div class="text-center text-white">
+      <h1>No tasks</h1>
+      <img src="/icons/empty.svg" class="w-75" />
+    </div>
+
+  </div>
+{{/if}}

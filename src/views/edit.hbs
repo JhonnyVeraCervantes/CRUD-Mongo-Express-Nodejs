@@ -1,0 +1,105 @@
+<div class="container">
+  <div class="row">
+    <!--FORM-->
+    <div class="col-md-5 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h1>Update Task</h1>
+
+          <form action="/tasks/{{task._id}}/edit" method="post">
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="text"
+                name="title"
+                placeholder="Title"
+                value="{{task.title}}"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="text"
+                name="ruc"
+                placeholder="Ruc"
+                value="{{task.ruc}}"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                name="razon_social"
+                rows="3"
+                placeholder="Razon_Social"
+              >{{task.razon_social}}</textarea>
+            </div>
+              </div>
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="text"
+                name="act_com"
+                placeholder="Actividad_Comercial"
+                value="{{task.act_com}}"
+              />
+            </div>
+             <div class="mb-3">
+              <input
+                class="form-control"
+                type="text"
+                name="num_col"
+                placeholder="Numero_Colaboradores"
+                value="{{task.num_col}}"
+              />
+            </div>
+             <div class="mb-3">
+              <input
+                class="form-control"
+                type="text"
+                name="direct_social"
+                placeholder="Direct_Social"
+                value="{{task.direct_social}}"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="text"
+                name="parroquia"
+                placeholder="Parroquia"
+                value="{{task.parroquia}}"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="text"
+                name="telefono"
+                placeholder="Telefono"
+                value="{{task.telefono}}"
+              />
+            </div>
+             <div class="mb-3">
+              <input
+                class="form-control"
+                type="text"
+                name="form_client"
+                placeholder="Form_Cliente"
+                value="{{task.num_col}}"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                name="description"
+                rows="3"
+                placeholder="Add a Description"
+              >{{task.description}}</textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
